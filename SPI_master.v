@@ -16,11 +16,11 @@ module SPI_master #(
     output reg [7:0] rx_data,
     output reg      SS_n
 );
-//GRAY encoding
-    localparam IDLE  = 3'b000;
-    localparam START = 3'b001;
-    localparam DATA  = 3'b011;
-    localparam STOP  = 3'b010;
+// One-hot encoding 
+localparam IDLE  = 4'b0001;
+localparam START = 4'b0010;
+localparam DATA  = 4'b0100;
+localparam STOP  = 4'b1000;
 
     reg [2:0] C_state, N_state;
 
