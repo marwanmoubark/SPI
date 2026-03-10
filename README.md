@@ -1,4 +1,5 @@
 SPI Communication Module (RTL Design & Verification)
+
 Project Overview
 This project features a complete SPI (Serial Peripheral Interface) communication system, including both Master and Slave modules. The design was implemented in Verilog HDL, synthesized for the Xilinx Artix-7 (Basys 3) FPGA, and verified through extensive testbench simulations.
 
